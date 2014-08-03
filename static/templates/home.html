@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<h1>Welcome Home</h1>
+
+<form method='POST' action='' > {% csrf_token %}
+	<input type='text' name='search'>
+	<input type='submit' value='submit'>
+</form>
+
+
+{% if locations %}
+You searched for: {{ query }}
+<ul>
+	{% for location in locations %}
+		<li>{{ location }}</li>
+	{% endfor %}
+</ul>
+
+{% endif %}
+{% endblock %}
