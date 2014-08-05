@@ -23,8 +23,12 @@
 	{% if locations %}
 		You searched for: {{ query }}
 		<ul>
-			{% for name, loc_id in locations %}
-				<li>{{ name }}, {{ locuOrFour_id }}</li>
+			{% for name, locuOrFour_id in locations %}
+				<li>
+          <a href="/location/{{ locuOrFour_id }}"> 
+            {{ name }} 
+          </a>
+        </li>
 			{% endfor %}
 		</ul>
 	{% endif %}

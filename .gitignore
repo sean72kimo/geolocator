@@ -39,3 +39,4 @@ Icon
 *.project
 *.pydevproject
 *.pyc
+*.sqlite3

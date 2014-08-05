@@ -10,7 +10,7 @@ urlpatterns = patterns('',
 	# (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT }),
 	url(r'^admin/', include(admin.site.urls)),
 	url(r'^$', 'geolocator.views.home', name='home'),
-	url(r'^location/(?P<id>.*)$', 'locations.views.single_location', name='single_location'),
+	url(r'^location/(?P<loc_id>.*)/$', 'locations.views.single_location', name='single_location'),
 )
 
 
