@@ -41,3 +41,4 @@ Icon
 *.pyc
 *.sqlite3
 *.sqlite3
+db.sqlite3

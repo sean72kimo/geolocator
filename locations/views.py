@@ -13,7 +13,7 @@ def single_location(request, loc_id):
         foursquare = True
     except:
         location = 'This Location Cannot Be Found'
-     
+
     if locu:
         details = locu_details(loc_id)
     elif foursquare:
