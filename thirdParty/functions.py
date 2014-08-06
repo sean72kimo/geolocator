@@ -18,7 +18,7 @@ def locu_details(locu_id):
     locu_api_key = 'f2043f05bda1feeefdbb262a37b07b0ec2c08d33'
 #   https://api.locu.com/v1_0/venue/023ec987899bed327a6d/?api_key=f2043f05bda1feeefdbb262a37b07b0ec2c08d33
     full_url = url + locu_id + '/?api_key=' + locu_api_key
-    print('locu_details=', full_url)
+#     print('locu_details=', full_url)
     obj =urllib.request.urlopen(full_url)
     data = obj.read()
     fileObj = StringIO(data.decode('utf-8'))

@@ -1,0 +1,9 @@
+//{% for item in details %}
+//    {% if forloop.first %}
+//        var lat = {{ item }};
+//    {% endif %}
+//    {% if forloop.last %}
+//        var lng = {{ item }};
+//    {% endif %}
+//{% endfor %}
+//var map;

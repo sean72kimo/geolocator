@@ -13,7 +13,6 @@ def single_location(request, loc_id):
         foursquare = True
     except:
         location = 'This Location Cannot Be Found'
-    print('locu= ', locu)
      
     if locu:
         details = locu_details(loc_id)
@@ -23,4 +22,3 @@ def single_location(request, loc_id):
         pass
 
     return render_to_response('locations/single.html', locals(), context_instance = RequestContext(request))
-
